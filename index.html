@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            background-color: white; /* Changed from blue to white */
+            color: black; /* Set text color to black for better contrast */
+            text-align: left;
+            font-family: 'Poppins';
+            padding: 17px;
+            font-size: 20px;
+            border-bottom: 1px solid #ccc; /* Optional: Add a subtle border for separation */
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: white;
+            position: relative;
+        }
+        .content img {
+            width: 700px;
+            height: auto;
+        }
+        .overlay-text {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 24px;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Olympics 2024
+    </div>
+    <div class="content">
+        <img src="https://www.francetvinfo.fr/pictures/UJ0rDLvi5zSwtEOZPRin9S-0RNY/1200x1200/2021/04/27/6087cfc64cca6_5f1ed90612eb2_paris-2024_0.jpg" alt="The History of the Olympics in Paris: 100 years on from 1924 – Absolutely French Paris">
+        <div class="overlay-text">
+            <div class="marquee">
+                <h1>Welcome to the Paris Olympics 2024.</h1>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        CUNANAN, KURT CYRILL ANDREI P.
+    </div>
+</body>
+</html>
